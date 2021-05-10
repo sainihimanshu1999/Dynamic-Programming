@@ -23,6 +23,6 @@ def trapWater(self,nums):
         rightMax[i] = right
 
     for i in range(n):
-        water[i] = min(leftMax[i],rightMax[i]) - height[i]
+        water[i] = min(leftMax[i],rightMax[i]) - nums[i]
 
     return sum(water)
