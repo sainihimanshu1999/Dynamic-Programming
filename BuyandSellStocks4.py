@@ -6,7 +6,7 @@ def stocks(self,prices,k):
     if not prices:
         return 0
 
-    if k>=len(price)//2:
+    if k>=len(prices)//2:
         return sum(x-y for x,y in zip(prices[1:],prices[:-1]) if x>y)
 
 
